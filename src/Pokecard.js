@@ -13,7 +13,7 @@ class Pokecard extends Component {
       imgLink = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${imgId}.png`;
     return (
       <div className="Pokecard">
-        <h2> {this.props.name} </h2>
+        <h2 data-testid="title"> {this.props.name} </h2>
         <div className="Pokecard-img">
           <img src={imgLink} alt={this.props.name} />
         </div>
